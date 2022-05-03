@@ -18,6 +18,12 @@
 		175585D42821B20800CDE7BD /* CryptoWalletExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175585D32821B20800CDE7BD /* CryptoWalletExampleUITestsLaunchTests.swift */; };
 		175585E22821B3B600CDE7BD /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 175585E12821B3B600CDE7BD /* SwiftProtobuf */; };
 		175585E42821B3B600CDE7BD /* WalletCore in Frameworks */ = {isa = PBXBuildFile; productRef = 175585E32821B3B600CDE7BD /* WalletCore */; };
+		175585EC2821BDE800CDE7BD /* WalletScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175585EB2821BDE800CDE7BD /* WalletScene.storyboard */; };
+		175585EE2821BDFA00CDE7BD /* WalletSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175585ED2821BDFA00CDE7BD /* WalletSceneViewController.swift */; };
+		175585F12821C0D000CDE7BD /* WalletCreateScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175585F02821C0D000CDE7BD /* WalletCreateScene.storyboard */; };
+		175585F32821C0EC00CDE7BD /* WalletCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175585F22821C0EC00CDE7BD /* WalletCreateViewController.swift */; };
+		175585F62821C19700CDE7BD /* WalletRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175585F52821C19700CDE7BD /* WalletRepository.swift */; };
+		175585F92821C1B200CDE7BD /* WalletRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175585F82821C1B100CDE7BD /* WalletRepositoryType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		175585CD2821B20800CDE7BD /* CryptoWalletExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoWalletExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		175585D12821B20800CDE7BD /* CryptoWalletExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletExampleUITests.swift; sourceTree = "<group>"; };
 		175585D32821B20800CDE7BD /* CryptoWalletExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		175585EB2821BDE800CDE7BD /* WalletScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalletScene.storyboard; sourceTree = "<group>"; };
+		175585ED2821BDFA00CDE7BD /* WalletSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSceneViewController.swift; sourceTree = "<group>"; };
+		175585F02821C0D000CDE7BD /* WalletCreateScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalletCreateScene.storyboard; sourceTree = "<group>"; };
+		175585F22821C0EC00CDE7BD /* WalletCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCreateViewController.swift; sourceTree = "<group>"; };
+		175585F52821C19700CDE7BD /* WalletRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRepository.swift; sourceTree = "<group>"; };
+		175585F82821C1B100CDE7BD /* WalletRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRepositoryType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +155,7 @@
 		175585E62821B51000CDE7BD /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				175585F42821C18A00CDE7BD /* Wallet */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -150,6 +163,7 @@
 		175585E72821B51600CDE7BD /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				175585F72821C1A900CDE7BD /* Wallet */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -157,6 +171,8 @@
 		175585E82821B51C00CDE7BD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				175585EF2821C0BF00CDE7BD /* WalletCreateScene */,
+				175585EA2821BDD400CDE7BD /* WalletScene */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -169,6 +185,40 @@
 				175585BE2821B20700CDE7BD /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		175585EA2821BDD400CDE7BD /* WalletScene */ = {
+			isa = PBXGroup;
+			children = (
+				175585EB2821BDE800CDE7BD /* WalletScene.storyboard */,
+				175585ED2821BDFA00CDE7BD /* WalletSceneViewController.swift */,
+			);
+			path = WalletScene;
+			sourceTree = "<group>";
+		};
+		175585EF2821C0BF00CDE7BD /* WalletCreateScene */ = {
+			isa = PBXGroup;
+			children = (
+				175585F02821C0D000CDE7BD /* WalletCreateScene.storyboard */,
+				175585F22821C0EC00CDE7BD /* WalletCreateViewController.swift */,
+			);
+			path = WalletCreateScene;
+			sourceTree = "<group>";
+		};
+		175585F42821C18A00CDE7BD /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				175585F52821C19700CDE7BD /* WalletRepository.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		175585F72821C1A900CDE7BD /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				175585F82821C1B100CDE7BD /* WalletRepositoryType.swift */,
+			);
+			path = Wallet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +332,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175585EC2821BDE800CDE7BD /* WalletScene.storyboard in Resources */,
 				175585BD2821B20700CDE7BD /* LaunchScreen.storyboard in Resources */,
 				175585BA2821B20700CDE7BD /* Assets.xcassets in Resources */,
 				175585B82821B20600CDE7BD /* Main.storyboard in Resources */,
+				175585F12821C0D000CDE7BD /* WalletCreateScene.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,9 +361,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175585EE2821BDFA00CDE7BD /* WalletSceneViewController.swift in Sources */,
 				175585B52821B20600CDE7BD /* ViewController.swift in Sources */,
+				175585F62821C19700CDE7BD /* WalletRepository.swift in Sources */,
+				175585F32821C0EC00CDE7BD /* WalletCreateViewController.swift in Sources */,
 				175585B12821B20600CDE7BD /* AppDelegate.swift in Sources */,
 				175585B32821B20600CDE7BD /* SceneDelegate.swift in Sources */,
+				175585F92821C1B200CDE7BD /* WalletRepositoryType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +550,7 @@
 				INFOPLIST_FILE = CryptoWalletExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = WalletScene;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -521,7 +577,7 @@
 				INFOPLIST_FILE = CryptoWalletExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = WalletScene;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
