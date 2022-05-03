@@ -103,13 +103,13 @@
 		175585AF2821B20600CDE7BD /* CryptoWalletExample */ = {
 			isa = PBXGroup;
 			children = (
-				175585B02821B20600CDE7BD /* AppDelegate.swift */,
-				175585B22821B20600CDE7BD /* SceneDelegate.swift */,
-				175585B42821B20600CDE7BD /* ViewController.swift */,
+				175585E52821B50B00CDE7BD /* Application */,
+				175585E62821B51000CDE7BD /* Data */,
+				175585E72821B51600CDE7BD /* Domain */,
 				175585B62821B20600CDE7BD /* Main.storyboard */,
-				175585B92821B20700CDE7BD /* Assets.xcassets */,
-				175585BB2821B20700CDE7BD /* LaunchScreen.storyboard */,
-				175585BE2821B20700CDE7BD /* Info.plist */,
+				175585E82821B51C00CDE7BD /* Presentation */,
+				175585E92821B52300CDE7BD /* Resources */,
+				175585B42821B20600CDE7BD /* ViewController.swift */,
 			);
 			path = CryptoWalletExample;
 			sourceTree = "<group>";
@@ -129,6 +129,46 @@
 				175585D32821B20800CDE7BD /* CryptoWalletExampleUITestsLaunchTests.swift */,
 			);
 			path = CryptoWalletExampleUITests;
+			sourceTree = "<group>";
+		};
+		175585E52821B50B00CDE7BD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				175585B02821B20600CDE7BD /* AppDelegate.swift */,
+				175585B22821B20600CDE7BD /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		175585E62821B51000CDE7BD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		175585E72821B51600CDE7BD /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		175585E82821B51C00CDE7BD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		175585E92821B52300CDE7BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				175585B92821B20700CDE7BD /* Assets.xcassets */,
+				175585BB2821B20700CDE7BD /* LaunchScreen.storyboard */,
+				175585BE2821B20700CDE7BD /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,7 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CryptoWalletExample/Info.plist;
+				INFOPLIST_FILE = CryptoWalletExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -478,7 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CryptoWalletExample/Info.plist;
+				INFOPLIST_FILE = CryptoWalletExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
