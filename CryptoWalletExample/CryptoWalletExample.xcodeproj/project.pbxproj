@@ -16,6 +16,8 @@
 		175585C82821B20800CDE7BD /* CryptoWalletExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175585C72821B20800CDE7BD /* CryptoWalletExampleTests.swift */; };
 		175585D22821B20800CDE7BD /* CryptoWalletExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175585D12821B20800CDE7BD /* CryptoWalletExampleUITests.swift */; };
 		175585D42821B20800CDE7BD /* CryptoWalletExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175585D32821B20800CDE7BD /* CryptoWalletExampleUITestsLaunchTests.swift */; };
+		175585E22821B3B600CDE7BD /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 175585E12821B3B600CDE7BD /* SwiftProtobuf */; };
+		175585E42821B3B600CDE7BD /* WalletCore in Frameworks */ = {isa = PBXBuildFile; productRef = 175585E32821B3B600CDE7BD /* WalletCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175585E42821B3B600CDE7BD /* WalletCore in Frameworks */,
+				175585E22821B3B600CDE7BD /* SwiftProtobuf in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,10 @@
 			dependencies = (
 			);
 			name = CryptoWalletExample;
+			packageProductDependencies = (
+				175585E12821B3B600CDE7BD /* SwiftProtobuf */,
+				175585E32821B3B600CDE7BD /* WalletCore */,
+			);
 			productName = CryptoWalletExample;
 			productReference = 175585AD2821B20600CDE7BD /* CryptoWalletExample.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 175585A42821B20600CDE7BD;
+			packageReferences = (
+				175585E02821B3B600CDE7BD /* XCRemoteSwiftPackageReference "wallet-core" */,
+			);
 			productRefGroup = 175585AE2821B20600CDE7BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -598,6 +609,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		175585E02821B3B600CDE7BD /* XCRemoteSwiftPackageReference "wallet-core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/trustwallet/wallet-core";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		175585E12821B3B600CDE7BD /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 175585E02821B3B600CDE7BD /* XCRemoteSwiftPackageReference "wallet-core" */;
+			productName = SwiftProtobuf;
+		};
+		175585E32821B3B600CDE7BD /* WalletCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 175585E02821B3B600CDE7BD /* XCRemoteSwiftPackageReference "wallet-core" */;
+			productName = WalletCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 175585A52821B20600CDE7BD /* Project object */;
 }
