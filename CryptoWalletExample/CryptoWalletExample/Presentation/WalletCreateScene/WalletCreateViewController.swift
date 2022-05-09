@@ -10,6 +10,8 @@ import UIKit
 
 class WalletCreateViewController: UIViewController {
     @IBOutlet weak var lblPhrase: UILabel!
+    @IBOutlet weak var imgTouch: UIImageView!
+    @IBOutlet weak var viewBlur: UIVisualEffectView!
     
     private let walletRepository: WalletRepositoryType = WalletRepository()
     
@@ -24,4 +26,11 @@ class WalletCreateViewController: UIViewController {
         // Step 2: Show phase
         self.lblPhrase.text = self.walletRepository.getWalletMnemonic()
     }
+    
+    // MARK: - ACTIONS
+    @IBAction func onClickBlur(_ sender: Any) {
+        self.viewBlur.isHidden = true
+        self.imgTouch.isHidden = true
+    }
+    
 }
